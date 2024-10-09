@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_text_contents",
+  "info": {
+    "displayName": "textContent",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "richText": {
+      "type": "blocks"
+    }
+  }
+}

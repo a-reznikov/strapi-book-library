@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_books",
+  "info": {
+    "singularName": "user-book",
+    "pluralName": "user-books",
+    "displayName": "UserBook"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "book": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::book.book"
+    },
+    "purchaseDate": {
+      "type": "datetime"
+    },
+    "availableUntil": {
+      "type": "datetime"
+    }
+  }
+}
